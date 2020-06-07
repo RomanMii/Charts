@@ -62,6 +62,12 @@
     <Compile Include="UserControlPolynomial.Designer.cs">
       <DependentUpon>UserControlPolynomial.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlTrygonometria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTrygonometria.Designer.cs">
+      <DependentUpon>UserControlTrygonometria.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMainWindow.resx">
       <DependentUpon>FormMainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="UserControlPolynomial.resx">
       <DependentUpon>UserControlPolynomial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTrygonometria.resx">
+      <DependentUpon>UserControlTrygonometria.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

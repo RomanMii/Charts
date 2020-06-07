@@ -58,5 +58,21 @@ namespace Charts
             }
             chart.ChartAreas.First().RecalculateAxesScale();
         }
+
+        private void liniowaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControlPolynomial newPolynomial = new UserControlPolynomial();
+            flowLayoutPanelControls.Controls.Add(newPolynomial);
+
+            newPolynomial.FunctonChanged += FunctonChanged;
+        }
+
+        private void trygonometrycznaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserControlTrygonometria newTrygonometria = new UserControlTrygonometria();
+            flowLayoutPanelControls.Controls.Add(newTrygonometria);
+
+            newTrygonometria.FunctonChanged += FunctonChanged;
+        }
     }
 }

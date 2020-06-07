@@ -28,14 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.flowLayoutPanelControls = new System.Windows.Forms.FlowLayoutPanel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.trygonometrycznaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wielomianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liniowaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chart
@@ -72,6 +78,7 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.ContextMenuStrip = this.contextMenuStrip1;
             this.buttonAdd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonAdd.Location = new System.Drawing.Point(540, 3);
             this.buttonAdd.Name = "buttonAdd";
@@ -89,6 +96,36 @@
             this.flowLayoutPanelControls.Size = new System.Drawing.Size(159, 336);
             this.flowLayoutPanelControls.TabIndex = 2;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trygonometrycznaToolStripMenuItem,
+            this.wielomianToolStripMenuItem,
+            this.liniowaToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
+            // 
+            // trygonometrycznaToolStripMenuItem
+            // 
+            this.trygonometrycznaToolStripMenuItem.Name = "trygonometrycznaToolStripMenuItem";
+            this.trygonometrycznaToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.trygonometrycznaToolStripMenuItem.Text = "trygonometryczna";
+            this.trygonometrycznaToolStripMenuItem.Click += new System.EventHandler(this.trygonometrycznaToolStripMenuItem_Click);
+            // 
+            // wielomianToolStripMenuItem
+            // 
+            this.wielomianToolStripMenuItem.Name = "wielomianToolStripMenuItem";
+            this.wielomianToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.wielomianToolStripMenuItem.Text = "wielomian";
+            // 
+            // liniowaToolStripMenuItem
+            // 
+            this.liniowaToolStripMenuItem.Name = "liniowaToolStripMenuItem";
+            this.liniowaToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.liniowaToolStripMenuItem.Text = "liniowa";
+            this.liniowaToolStripMenuItem.Click += new System.EventHandler(this.liniowaToolStripMenuItem_Click);
+            // 
             // FormMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -99,6 +136,7 @@
             this.Text = "grAphs";
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -109,6 +147,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelControls;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem trygonometrycznaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wielomianToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem liniowaToolStripMenuItem;
     }
 }
 
